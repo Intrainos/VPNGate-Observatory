@@ -26,4 +26,4 @@ var server = app.listen(3000, function() {
   console.log('Example app listening at http://%s:%s', host, port);
 });
 db.parseCSVAndInsert();
-setInterval(db.parseCSVAndInsert, 1000 * 5);
+setInterval(db.parseCSVAndInsert, 1000 * 1800);

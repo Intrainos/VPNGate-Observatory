@@ -8,6 +8,7 @@ block HeadContent
 block Content
   div.container
     div.page-header
+      h5 Hosted by Intrainos
       h1 이 사이트는 무슨 사이트인가요?
     p.
       VPNGate를 아십니까? VPNGate는 Tor처럼 자원봉사자들이 VPN 서버를 제공하는 프로젝트입니다.
@@ -16,12 +17,12 @@ block Content
       VPNGate 관측소는 이러한 경우에 당신을 도와줍니다.
     div.page-header
       h1 API 안내
-    p!= "<code>http://vpngate-observatory.litehell.info/search/IP주소</code> 하시면 json형태로 응답이 나옵니다."
+    p!= "<code>http://vpngate-observatory.intrainos.net/serach/IP주소</code> 하시면 json형태로 응답이 나옵니다."
     div.page-header
       h1!= "검색 <small>VPNGate VPN IP였는지, 언제 그랬는지 검색합니다.</small>"
     p.
-      2015년 11월 15일 오후 1시 50분부터의 기록만 검색됩니다.
-      기록은 5초 간격이며, IP 주소로만 검색하실 수 있습니다.
+      2015년 11월 16일부터의 기록만 검색됩니다.
+      기록은 30분 간격이며, IP 주소로만 검색하실 수 있습니다.
     div.input-group
       input.form-control(placeholder="IP 주소", type="text", id="query")
       span.input-group-btn
@@ -29,8 +30,7 @@ block Content
     div#resultDiv(style={display: 'none'})
       div.page-header
         h1 검색 결과
-      p#processing .
-        진행중입니다.
+      p#processing 진행중입니다.
       table.table.table-striped#result(style={display: 'none'})
         thead
           tr
