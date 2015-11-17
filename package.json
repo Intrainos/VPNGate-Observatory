@@ -6,11 +6,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "LiteHell",
+  "author": {"LiteHell", "Intrainos"},
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/LiteHell/VPNGate-Observatory.git"
+    "url": "https://github.com/Intrainos/VPNGate-Observatory.git"
   },
   "dependencies": {
     "express": "^4.13.3",
